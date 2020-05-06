@@ -2,4 +2,5 @@
 
 ROOT_DIR="$(cd $(dirname "$0")/..; pwd)"
 source $ROOT_DIR/bin/glue-setup.sh
+alias python=python3
 exec "${SPARK_HOME}/bin/pyspark" "$@"
